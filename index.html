@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Kibet</title>
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/72d1145f74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar Start-->
+    <div class="navbar" id="navbar"> 
+        <a href="index.html" class="logo"><img src="./Assets/brianlogo.jpg" alt="Logo"></a>        
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a onclick="">Portfolio</a></li>
+            <li><a onclick="scrollAbout()" id="about">About</a></li>
+            <li><a onclick="scrollContact()">Contact</a></li>                  
+        </ul>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="checkButton">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        
+    </div>
+    <!--Navbar End-->
+
+    <!--Banner Area Start-->
+    <div class="container">
+        <div class="intro">
+            <h1>Hello. I'm Brian</h1>
+            <h3>Software Developer</h3>
+           <div class="buttons">
+               <button class="btn btn1" onclick="scrollContact()">Hire Me</button>
+               <button class="btn btn2">See CV</button>
+           </div>
+        </div>
+        <div class="image">
+            <img src="./Assets/brianphoto.jpg" alt="brian">
+        </div>
+    </div>
+    <!--Banner Area Start End-->
+<hr>
+    <!--About Area Start-->
+    <div class="about">        
+            <h1>About</h1>        
+        <p>Since I finished highschool,I've always been inpired by how <br>
+        human beings  use computers solve alot of  day to day problems 
+         and  <br> since I like solving problems and taking challenges,I registered for <br> a Computer Science 
+          course at The Cooperative University of Kenya to <br> understand more about  computer workings and 
+        softwares.I'm currently <br> a third year student a the university and I'm 
+         passionate in changing ideas <br>
+        into softwares.Take a look around to see my recently done projects <br>
+    </p>
+    </div>
+    <!--About Area End-->
+<hr>
+    <!--Skills Area Start-->
+    <div class="skills-area">
+        <div class="skills-title">
+            <h1>My Skills</h1>
+        </div>
+        <div class="progress-bars">
+            <div class="progress-bar" style="--width:80" data-label="HTML"><span>80%</span></div>
+            <div class="progress-bar" style="--width:70" data-label="CSS"><span>70%</span></div>
+            <div class="progress-bar" style="--width:48" data-label="JavaScript"><span>48%</span></div>
+            <div class="progress-bar" style="--width:60" data-label="PHP"><span>60%</span></div>
+            <div class="progress-bar" style="--width:65" data-label="MySQL"><span>65%</span></div>
+            <div class="progress-bar" style="--width:50" data-label="Java"><span>50%</span></div>
+            <div class="progress-bar" style="--width:43" data-label="Python"><span>43%</span></div>
+        </div>
+        </div>        
+    </div>
+    <!--Skills Area End-->
+
+    <!--Porfolio Start-->
+    <div class="porfolio">
+        <div class="porfolio-title">
+            <h1>Portfolio</h1>
+        </div>
+    </div>
+    <!--Porfolio End-->
+    <!--Contact me Start-->
+    <div class="contact-area">
+        <div class="contact">
+            <h1>Contact</h1>
+            <div class="address">
+                <p>Brian Kibet</p>
+                <p>012345 Street</p>
+                <p>Nairobi,Kenya</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <h1>Connect me</h1>
+            <div class="icons">
+                <ul>
+                    <li><a href=""><i class="fa fa-github" ></i></a></li>  
+                    <li><a href=""><i class="fa fa-twitter" ></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram" ></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin" ></i></a></li>          
+                </ul>
+            </div>           
+        </div>
+        <div class="leave-message">
+            <h1>Leave a message here</h1>
+            <div class="message-field">
+                <div class="message">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Full Name"> <br>
+                        <input type="email" placeholder="Email"> <br>
+                        <textarea name="" id="" cols="20" rows="3" placeholder="Message"></textarea> <br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>                
+            </div>            
+        </div>
+        </div>
+    </div>
+    <!--Contact me End-->
+    <hr>
+    <div class="copyright">
+        <p>&#169; 2021 by Brian Kibet</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

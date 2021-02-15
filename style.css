@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+} 
+
+body
+{
+    background: black;
+    font-family: 'Roboto', sans-serif;  
+    overflow: hidden;  
+    
+}
+.navbar
+{
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+.logo
+{
+    position: relative;    
+    left: 30px;
+    line-height: 80px;
+    top: -10px;
+}
+.logo img
+{
+    width: 200px;
+    height: 150x;
+}
+.navbar ul
+{   
+    list-style: none;    
+    float: right;
+    padding-right: 100px;
+}
+.navbar li
+{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+    
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar ul li a:hover
+{
+    border-bottom: 1px solid #fff;    
+}
+.checkButton
+{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+#checkbox
+{
+    display: none;
+}
+
+@media (max-width:858px)
+{ 
+    .logo
+    {
+        width: 90px;
+        height: 75px;
+        position: relative;
+        left: 20px;
+        transition: all .5s;
+    }
+    
+    .checkButton
+    {
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 10%;
+    }
+    ul
+    {
+        position: relative;
+        left: -9999px;
+        width: 100%;
+        height: 100vh;
+        background-color: #323232;
+        text-align: center;
+    }
+    .navbar ul li
+    {
+        display: block;
+    }
+    .navbar ul li a
+    {
+        
+    }
+    #checkbox:checked ul
+    {
+       left: 0px;
+    }
+    
+    
+
+    
+}
+.container
+{
+    background-color: black;
+    height: 120vh;
+}
+.intro
+{
+    position: relative;
+    left: 50px;
+    top: 200px;    
+}
+.buttons
+{
+    margin-top: 28px;
+}
+.btn
+{
+    border: 1px solid #fff;
+    padding: 10px 28px;
+    font-family: 'Roboto', sans-serif;  
+    cursor: pointer;
+    transition: 0.8s;
+}
+.btn1
+{
+    color: #fff;
+    background-color: black;
+}
+.btn2
+{
+    color: black;
+    background-color: #fff;
+    margin-left: 5px;
+}
+
+.btn1:hover
+{
+    background-color: #fff;
+    color: black;
+}
+.btn2:hover
+{
+    background-color: black;
+    color: #fff;
+}
+.intro h1
+{
+    color: #fff;
+    font-size: 50px;
+}
+.intro h3
+{
+    color: #fff;
+    font-size: 25px;
+}
+.image
+{
+    position: absolute;
+    left: 53%;
+    top: 25%; 
+}
+.image img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.about
+{
+    height: 50vh;   
+}
+.about h1
+{
+    position: absolute;
+    left: 44%;
+    color: #fff;
+}
+.about p
+{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 400px;
+    font-family: 'Roboto', sans-serif;  
+}
+.skills-area
+{
+    background: black;
+    height: 80vh;   
+}
+.skills-title 
+{
+    position: absolute;
+    left: 45%;    
+    color: #fff;  
+    position: relative;  
+    left: 550px;
+    padding-bottom: 20px;
+}
+.progress-bar
+{
+    width: 500px;
+    height: 3em;
+    background-color:black;
+    border-radius: 1.5em;
+    position: relative;
+}
+.progress-bars
+{
+   position: relative;
+   left: 400px;
+}
+.progress-bar::before
+{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    bottom: .5em;
+    width: calc(var(--width,0)*1%);
+    min-width: 2rem;
+    max-width: calc(100%-1rem);
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1em;
+}
+.progress-bar span
+{
+    position: relative;
+    left:calc(var(--width,0)/100*500px);
+    top: 1em;
+}
+hr
+{
+    color: #323232;
+}
+.porfolio
+{
+    height: 50vh;
+}
+.porfolio-title
+{
+    position: absolute;
+    left: 45%;    
+    color: #fff;  
+    position: relative;  
+    left: 550px;
+    padding-bottom: 20px;
+}
+.contact-area
+{
+    background: #fff;
+    height: 40vh;
+    overflow: hidden;
+}
+.contact
+{
+    position: relative;
+    left: 60px;
+    top: 20px;
+    font-family: 'Roboto', sans-serif;  
+}
+.address
+{
+    margin-top: 20px;
+}
+.social-media
+{
+    font-family: 'Roboto', sans-serif;  
+    position: relative;
+    left: 550px;   
+    top: -101px; 
+}
+.icons
+{
+    position: relative;
+    left: 60px;
+}
+.icons ul li
+{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.icons ul li a
+{
+    color: black;
+}
+.leave-message
+{
+    position: relative;
+    left: 900px;
+    top: -295px;
+    overflow: hidden;
+}
+.message input,textarea
+{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+.message button
+{
+    padding: 6px;
+    width: 100px;
+    margin-top: 10px;
+    background: black;
+    color: #fff;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+.copyright
+{
+    position: relative;
+    left: 550px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
