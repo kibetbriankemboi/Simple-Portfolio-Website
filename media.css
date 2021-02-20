@@ -1,0 +1,149 @@
+
+@media (max-width:858px)
+{ 
+
+    .navbar-toggler
+    {
+        position: relative;
+        top: -40px;
+        right: 25px;
+    } 
+    .logo
+    {
+        position: relative;
+        top: -90px;
+        left: -60px;
+    }
+    .logo img
+    {
+        position: absolute;
+        top: -10%;
+        left: 4%;
+        transition: all .5s;
+        margin: 10px;
+    }
+    .navbar .logo img
+    {
+        width: 180px;
+        height: 150x;
+    }
+    .navbar
+    {
+        overflow: -moz-hidden-unscrollable;
+        height: 200px;
+    }
+    .intro
+    {
+        position: relative;
+        top: 75px;
+    }
+    .intro
+    {
+        height: 80vh;
+    }
+    .image
+    {
+        display: none;
+    } 
+    .navlinks li
+    {
+        position: fixed;
+        left: 1px;
+        background: #333333;
+        height: 100vh;
+        width: 100%;        
+        transition: 1s ease;
+        flex-direction: column;
+        display: block;
+    }
+    .checkbutton
+    {
+        display: block;
+        position: absolute;
+        left: 85%;
+        top: 4%;
+        transform: translate(0,4%);
+    } 
+    .about
+    {
+        height: 70vh;
+    }
+    .about h1
+    {
+        position: absolute;
+        left: 40%;
+    }
+    .about p 
+    {
+        position: absolute;
+        top: 125%;
+        left: 10%;
+    }
+    .skills-title
+    {
+        left: 120px;
+    }
+    .progress-bars-skills
+    {
+        left: 0;
+    }
+    .porfolio-title
+    {
+        left: 31%;
+    }
+    .contact-area
+    {
+        height: 60vh;
+    }
+    .contact
+    {
+        left: 20px;
+        top: 7px;
+    }
+    .contact h1 
+    {
+        font-size: 30px;
+    }
+    .leavemessage
+    {
+        left: 200px;
+        top: -210px;
+    }
+    .leavemessage h1 
+    {
+        font-size: 30px;
+    }
+    .social-media
+    {
+        left: 120px;
+        top: 50px;
+    }
+    .social-media h1 
+    {
+        display: none;
+    }
+    .icons
+    {
+        display: table;
+        left: 0;
+        top: 100px;
+        background: #fff;
+    }
+    .icons ul
+    {
+        list-style: none;
+    }
+    .icons ul li 
+    {
+        display: inline;
+    }
+    .copyright
+    {
+        left: 20px;
+    }
+    .copyright p
+    {
+        left: 140px;
+    }
+   
+}

@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Kibet</title>
-    <link rel="stylesheet" href="style.css">    
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <!--Font Awsome CDN Start-->
     <script src="https://kit.fontawesome.com/72d1145f74.js" crossorigin="anonymous"></script>
+    <!--Font Awsome CDN End-->
+
+    <!--Bootsrap CDN Start-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <!--Bootsrap CDN End-->
+    <title>BrianKibet</title>
 </head>
 <body>
-    <!--Navbar Start-->
-    <div class="navbar" id="navbar"> 
-        <a href="index.html" class="logo"><img src="./Assets/brianlogo.jpg" alt="Logo"></a>        
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a onclick="">Portfolio</a></li>
-            <li><a onclick="scrollAbout()" id="about">About</a></li>
-            <li><a onclick="scrollContact()">Contact</a></li>                  
-        </ul>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox" class="checkButton">
-            <i class="fas fa-bars"></i>
-        </label>
-
-        
+    <!--Navbar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="./Assets/brianlogo.jpg" alt="logo">
+              </a>    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <label class="checkbutton">
+                    <i class="fas fa-bars"></i>
+                </label></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav bg-black">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: #fff;">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollAbout()" style="color: #fff; cursor: pointer;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="scrollContact()" style="color: #fff; cursor: pointer;">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </div>
-    <!--Navbar End-->
-
+    
+    <!--Navbar-->
+    
     <!--Banner Area Start-->
-    <div class="container">
+    <div class="container-fluid banner-area" data-toggle="collapse">
         <div class="intro">
             <h1>Hello. I'm Brian</h1>
             <h3>Software Developer</h3>
-           <div class="buttons">
-               <button class="btn btn1" onclick="scrollContact()">Hire Me</button>
-               <button class="btn btn2">See CV</button>
+           <div class="banner-area-buttons">
+               <button class="button1 button-1" onclick="scrollContact()">Hire Me</button>
+               <button class="button1 button-2">See CV</button>
            </div>
         </div>
         <div class="image">
@@ -42,9 +69,10 @@
         </div>
     </div>
     <!--Banner Area Start End-->
-<hr>
+  <hr>
     <!--About Area Start-->
-    <div class="about">        
+    <div class="container-fluid">
+        <div class="about">        
             <h1>About</h1>        
         <p>Since I finished highschool,I've always been inpired by how <br>
         human beings  use computers solve alot of  day to day problems 
@@ -55,34 +83,36 @@
         into softwares.Take a look around to see my recently done projects <br>
     </p>
     </div>
-    <!--About Area End-->
+    </div>   
+<!--About Area End-->
 <hr>
-    <!--Skills Area Start-->
-    <div class="skills-area">
-        <div class="skills-title">
-            <h1>My Skills</h1>
-        </div>
-        <div class="progress-bars">
-            <div class="progress-bar" style="--width:80" data-label="HTML"><span>80%</span></div>
-            <div class="progress-bar" style="--width:70" data-label="CSS"><span>70%</span></div>
-            <div class="progress-bar" style="--width:48" data-label="JavaScript"><span>48%</span></div>
-            <div class="progress-bar" style="--width:60" data-label="PHP"><span>60%</span></div>
-            <div class="progress-bar" style="--width:65" data-label="MySQL"><span>65%</span></div>
-            <div class="progress-bar" style="--width:50" data-label="Java"><span>50%</span></div>
-            <div class="progress-bar" style="--width:43" data-label="Python"><span>43%</span></div>
-        </div>
-        </div>        
+<!--Skills Area Start-->
+<div class="skills-area container-fluid">
+    <div class="skills-title">
+        <h1>My Skills</h1>
     </div>
-    <!--Skills Area End-->
-
-    <!--Porfolio Start-->
-    <div class="porfolio">
-        <div class="porfolio-title">
-            <h1>Portfolio</h1>
-        </div>
+    <div class="progress-bars-skills">
+        <div class="progress-bar-skills" style="--width:80" data-label="HTML"><span>80%</span></div>
+        <div class="progress-bar-skills" style="--width:70" data-label="CSS"><span>70%</span></div>
+        <div class="progress-bar-skills" style="--width:48" data-label="JavaScript"><span>48%</span></div>
+        <div class="progress-bar-skills" style="--width:60" data-label="PHP"><span>60%</span></div>
+        <div class="progress-bar-skills" style="--width:65" data-label="MySQL"><span>65%</span></div>
+        <div class="progress-bar-skills" style="--width:50" data-label="Java"><span>50%</span></div>
+        <div class="progress-bar-skills" style="--width:43" data-label="Python"><span>43%</span></div>
     </div>
-    <!--Porfolio End-->
-    <!--Contact me Start-->
+    </div>        
+</div>
+<!--Skills Area End-->
+<hr>
+ <!--Porfolio Start-->
+ <div class="porfolio">
+    <div class="porfolio-title">
+        <h1>Portfolio</h1>
+    </div>
+</div>
+ <!--Porfolio End-->
+<hr>
+<!--Contact me Start-->
     <div class="contact-area">
         <div class="contact">
             <h1>Contact</h1>
@@ -103,8 +133,8 @@
                 </ul>
             </div>           
         </div>
-        <div class="leave-message">
-            <h1>Leave a message here</h1>
+        <div class="leavemessage">
+            <h1>Leave a message</h1>
             <div class="message-field">
                 <div class="message">
                     <form action="">

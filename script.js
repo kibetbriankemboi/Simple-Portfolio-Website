@@ -2,7 +2,7 @@
 
 function scrollAbout()
 {    
-    window.scrollTo(0,700);    
+    window.scrollTo(0,680);    
 }
 function scrollContact()
 {
